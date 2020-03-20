@@ -12,6 +12,7 @@ def setup():
     y = 200
     x1 = 1
     y1 = 1
+    
 def draw():
     background(20, 0, 26)
     global x
@@ -39,3 +40,5 @@ def draw():
 
     if(x == 10):
         exit()
+        
+# 2pkt

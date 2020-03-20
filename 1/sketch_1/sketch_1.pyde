@@ -4,6 +4,8 @@ def setup():
     rectMode(CORNER)
 def draw():
     if mousePressed:
-        rect(mouseX, mouseY, 200, 200)
+        rect(mouseX, mouseY, height/3, width/3) # lepiej używać zależnych wielkości
     else:
         line(height, width, mouseX, mouseY)
+        
+# 2 pkt
