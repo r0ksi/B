@@ -1,12 +1,15 @@
 def setup(): 
     size(400, 400) 
     textSize(100)   
-    strokeWeight(3) 
+    strokeWeight(3)
+    global b
+    b=False
     
 def draw():  
 
     clear()
-    background(255, 153, 153) 
+    background(255, 153, 153)
+    global b
 
     text("R", width/2-50, height/2)
     c = get(mouseX, mouseY)
@@ -28,20 +31,23 @@ def draw():
             text("B", width/2+50, height/2)
 
     if keyPressed:
-        if key == "b":
+        if key == "b" or key == "B":
             text("B", width/2+50, height/2)
             fill(213, 93, 173)
+            b=True
     
-        if keyCode == 37:
+        if keyCode == 37 and b:
             fill(255, 102, 153)
             text("R", width/2-50, height/2)
             fill(255, 255, 255)
+    else:
+        b=False
    
     text("B", width/2+50, height/2)
     fill(255, 255, 255)
     
     if keyPressed:
-        if key == "r":
+        if key == "r" or key == "R":
             fill(255, 102, 153)
                                                                                                                 
     x = createShape()  
@@ -57,5 +63,8 @@ def draw():
     x.vertex(50, 120) 
     x.endShape(CLOSE)  
 
-    shape(x, 70, 140) 
+    shape(x, 70, 140)
+
+#drobny mankament, że klawisz w lewo podświetlał R nawet gdy nie było wybrane B. Przeanalizuj rozwiązanie.
+# 2pkt
     
