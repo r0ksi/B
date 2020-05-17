@@ -16,18 +16,24 @@ class WskazowkaZegara():
         
 def setup():
     size(400, 400)
-    global wskazoweczka
+    global wskazoweczka, wskazowka
     global img
-    wskazoweczka = WskazowkaZegara(width/2, height/2, 140) 
+    wskazoweczka = WskazowkaZegara(width/2, height/2, 140)
+    wskazowka = WskazowkaZegara(width/2, height/2, 140) # miały być dwa obiekty
     img = loadImage("img.png")
 
     print(type(img))
     
 def mouseWheel(event): 
     wskazoweczka.obroc(30)
+    wskazowka.obroc(1)
     print(WskazowkaZegara.godzina)
     
 def draw(): 
     image(img, 0,0, 400, 400)
     wskazoweczka.rysuj()
-    
+    wskazowka.rysuj()
+
+# bardzo mocno wzorowane na moim kodzie, to ważny temat, spróbuj jeszcze go pozgłębiać
+# zwróć uwagę, jak niewiele kodu trzeba obecnie dodać, aby otrzymać kolejny obiekt o tak 'skomplikowanej' już funkcjonalności
+# 1,25pkt, głównie za małą oryginalność w stosunku do atrybutów i metody (zostały bez zmian z moimi)
