@@ -7,14 +7,14 @@ def setup():
     img = loadImage("image.png") #zdjęcie wygenerowane z https://thispersondoesnotexist.com/ :)
     beginRecord(PDF, "outimage.pdf")
     
-    print(random.random())
-    print(type(img))
+    #print(random.random())
+    #print(type(img))
     
 def draw():
     global img
     image(img, 0,0, 492, 633)
     
-    if keyPressed:
+    if keyPressed: # poniższy komentarz powinien być zawarty dla użytkownika w mini UI asmego programu, a nie tylko dla programisty w kodzie :)
         if key == "1": #możliwość przeskakiwania między opcjami elementów graficznych za pomocą 1, 2, 3
             beginShape()
             noStroke()
@@ -70,10 +70,13 @@ def draw():
             fill(204, 0, 0)
             ellipse(246, 100, 20, 30)
             endShape()
+            # namęczyłaś się z rysunkami
             
-            
-    endRecord()
+        endRecord() # teraz będzie zamykać zapis pliku dopiero po wcinięciu jakiegoś klawisza, wczęśniej zamykało w pierwszej klatce nie zdążając zarejestrować dodatków
     
 def mousePressed():
     exit()
+    
+# 1,75p
+
           
