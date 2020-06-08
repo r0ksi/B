@@ -1,0 +1,11 @@
+Bankomat #klasa
+def __init__(self...) #atrybut klasy
+self.saldo=0 #atrybut obiektu
+def wplata(self) #metoda klasy
+ilosc =
+self.balance += ilosc #atrybut obiektu
+def wyplata(self) #metoda klasy
+def wykaz(self) #metoda klasy
+b = Bankomat() #obiekt klasy (tworzenie)
+k.wplata #wywołanie metod
+k.wyplata...
