@@ -51,7 +51,7 @@ def draw():
     text('wypozycz', 120,25)
     text('zwroc', 130, 55)
     
-def keyPressed():
+def keyPressed(): #ciekawe rozróżnienie kto wypożycza ;)
     
         if key == CODED:     
                 if keyCode == UP:
@@ -67,4 +67,4 @@ def mouseClicked():
         if mouseY >40 and mouseY <60:
             library.addBook(Madzia.returnBook())   
             
-        
+0,5/0,5pkt za tą część

@@ -1,6 +1,6 @@
-Bankomat #klasa
-def __init__(self...) #atrybut klasy
-self.saldo=0 #atrybut obiektu
+Bankomat #klasa - tylko jedna? A klasa karta na przykład? nie przydałąby się?
+def __init__(self...) #włąściwie inicjalizator (pełniący funkcję konstruktora) - czyli metoda specjalna
+self.saldo=0 #atrybut obiektu # karty/konta, czy ile banknotów i o jakim nominale ma bankomat w danym momencie? wartoby to rozróżnić, bo nie wynika z planu.
 def wplata(self) #metoda klasy
 ilosc =
 self.balance += ilosc #atrybut obiektu
@@ -9,3 +9,5 @@ def wykaz(self) #metoda klasy
 b = Bankomat() #obiekt klasy (tworzenie)
 k.wplata #wywołanie metod
 k.wyplata...
+
+0,5pkt/1,5pkt za tą część
