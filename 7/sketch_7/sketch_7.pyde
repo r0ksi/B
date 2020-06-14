@@ -28,7 +28,7 @@ class KotyRoksi(Pet):
         text('mrrrr', random(50, width-70), random(50, height-50))
     def Kotki(self):
          image(loadImage("kotki.png"), random(50, width-70), random(50, height-100))
-    def __add__(self, other): 
+    def __add__(self, other): # miało być nadpisane odejmowanie, czyli metoda __sub__
         return self.name[0]+ ' i ' + other.name[0]
 def setup():
     background(204, 153, 255)
@@ -38,7 +38,7 @@ def setup():
     Benio = Dog('Benio')
     Skrypcik = Cat('Skrypcik') 
     Maniek = KotyRoksi('Maniek')
-    Zenka = KotyRoksi('Zenka')
+    Zenka = KotyRoksi('Zenka') # to od Zenka disco polo? ;D
     global list_of_pets
     list_of_pets = [Rex, Benio, Skrypcik, Maniek, Zenka] 
     print(Maniek+Zenka) 
@@ -54,3 +54,4 @@ def mouseClicked():
             pet.gimmePaw()
         if isinstance(pet, KotyRoksi):
             pet.Kotki()
+# 1,75 pkt
