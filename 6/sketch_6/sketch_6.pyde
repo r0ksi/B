@@ -8,7 +8,7 @@ class Kwadrat():
         
         
 class Domek(Kwadrat):
-    def sketchDomek(self, x, y, drzewo, pien, komin):
+    def sketchDomek(self, x, y): #po co przekazywać argumenty, z którymi nic isę dalej wewnątrz metody nie robi?
         fill(255, 221, 153)
         Kwadrat.sketch(self, x, y)
         _x1_ = 0
@@ -26,7 +26,9 @@ def setup():
     size(400, 400)
     background(153, 153, 255)
     malyDomek = Domek(50.0)
-    malyDomek.sketchDomek(250, 260, 1, 1, 1)
+    malyDomek.sketchDomek(250, 260)
     duzyDomek = Domek(80.0)
-    duzyDomek.sketchDomek(90, 140, 1, 1, 1)
+    duzyDomek.sketchDomek(90, 140)
         
+# plus do aktywności za pomysł
+# 1,75pkt
