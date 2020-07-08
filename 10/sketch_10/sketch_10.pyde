@@ -59,28 +59,20 @@ def mouseClicked():
             library.addBook(Madzia.returnBook())
             
 class TescikZapytania(unittest.TestCase):
-    book = ""
-    haveBook = False
-    def requestBook(self, book):
-        print("Book You want to borrow is choosen.").format(self.book)
-        self.book = book
-        self.haveBook = True
-        return self.book
-        if self.haveBook:
-            self.haveBook = False
-            return self.book
-    
-        else:
-            self.book = ""
-            return False
         
     def testujzapytanko(self):
-        result = TescikZapytania.haveBook
+        ja = Customer() # zamaist pisać tą samą funkcjonalność, trzba skorzystać z napisanych już klas, które tą funkcjonalność mają
+        result = ja.haveBook
         self.assertNotEqual(result, True)
         
     def testujzapytanko2(self):
-        result = TescikZapytania.haveBook
-        self.assertEqual(result, False)
+        ja = Customer()
+        result = ja.haveBook
+        self.assertEqual(result, False) # to to samo, co w tescie wyżej, tylko inaczej napisane
         
 if __name__ == "__main__":
-    unittest.main()            
+    unittest.main()
+    
+# 1,25pkt
+    
+        
