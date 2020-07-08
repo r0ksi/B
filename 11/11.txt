@@ -6,3 +6,6 @@ Dentysta (do asystentki): Pani Kasiu dziś będziemy przerywać włókna ozębne
 WZORZEC: Fasada.
 DLACZEGO: Pacjent (klient) w prosty sposób komunikuje swoje potrzeby. Dentysta posługuje się specjalistycznymi terminami.
 Proste polecenia przekłada na specyficzny język - jest fasadą, dzięki której zadanie zostanie wykonane.
+
+Dobry i oryginalny przykład
+2pkt
